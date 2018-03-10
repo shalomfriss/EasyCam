@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
     }
     override func viewDidAppear(_ animated: Bool) {
+        EasyCam.autoCorrect = false
         EasyCam.shared.showActionSheet(vc: self)
         EasyCam.shared.imagePickedBlock = { (image) in
             print("Done")

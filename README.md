@@ -18,6 +18,7 @@ end
 ## Usage
 
 ```swift
+EasyCam.autoCorrect = false //An internal autocorrect filter that is true by default
 EasyCam.shared.showActionSheet(vc: self)
 EasyCam.shared.imagePickedBlock = { (image) in
     //use image here

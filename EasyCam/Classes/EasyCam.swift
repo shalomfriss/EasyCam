@@ -23,8 +23,8 @@ public class EasyCam: NSObject{
     
     //MARK: Internal Properties
     public var imagePickedBlock: ((UIImage) -> Void)?
-    var _autoCorrect:Bool = true
-    var autoCorrect:Bool {
+    private static var _autoCorrect:Bool = true
+    public static var autoCorrect:Bool {
         get {
             return self._autoCorrect
         }
@@ -88,7 +88,7 @@ extension EasyCam: UIImagePickerControllerDelegate, UINavigationControllerDelega
     //Image gotted either through camera or the image picker
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if var image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            if(self._autoCorrect == true) {
+            if(EasyCam.autoCorrect == true) {
                 var inputImage = CIImage(image:image)
                 let filters = inputImage?.autoAdjustmentFilters()
                 for filter:CIFilter in filters! {
