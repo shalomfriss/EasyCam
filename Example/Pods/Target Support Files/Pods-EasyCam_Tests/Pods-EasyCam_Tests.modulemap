@@ -1,0 +1,6 @@
+framework module Pods_EasyCam_Tests {
+  umbrella header "Pods-EasyCam_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

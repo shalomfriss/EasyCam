@@ -1,0 +1,22 @@
+{
+  "name": "EasyCam",
+  "version": "0.1.0",
+  "summary": "A short description of EasyCam.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/shalomfriss/EasyCam",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "shalomfriss": "shalomfriss@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/shalomfriss/EasyCam.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EasyCam/Classes/**/*"
+}
