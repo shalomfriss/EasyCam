@@ -11,10 +11,18 @@ platform :ios, '10.0'
 use_frameworks!
 
 target "PodTest" do
-pod 'EasyCam', :git => 'https://github.com/shalomfriss/easycam.git'
+    pod 'EasyCam', :git => 'https://github.com/shalomfriss/easycam.git'
 end
 ```
 
+## Usage
+
+```swift
+EasyCam.shared.showActionSheet(vc: self)
+EasyCam.shared.imagePickedBlock = { (image) in
+    //use image here 
+}
+```
 ## Author
 
 shalomfriss, shalomfriss@gmail.com
