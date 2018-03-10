@@ -4,12 +4,7 @@ Pod::Spec.new do |s|
 s.summary          = "The easiest way to take or select a picture in iOS, because it shouldn't take an hour"
 
   s.description      = <<-DESC
-```swift
-    EasyCam.shared.showActionSheet(vc: self)
-    EasyCam.shared.imagePickedBlock = { (image) in
-        self.image?.image = image
-    }
-```
+The easiest way to take or select a picture in iOS, because it shouldn't take an hour
                        DESC
 
   s.homepage         = 'https://github.com/shalomfriss/EasyCam'
