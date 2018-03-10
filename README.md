@@ -10,7 +10,7 @@ it, simply add the following line to your Podfile:
 platform :ios, '10.0'
 use_frameworks!
 
-target "PodTest" do
+target "[YourTarget]" do
     pod 'EasyCam', :git => 'https://github.com/shalomfriss/easycam.git'
 end
 ```
@@ -20,7 +20,7 @@ end
 ```swift
 EasyCam.shared.showActionSheet(vc: self)
 EasyCam.shared.imagePickedBlock = { (image) in
-    //use image here 
+    //use image here
 }
 ```
 ## Author
