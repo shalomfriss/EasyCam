@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'EasyCam'
   s.version          = '1.0'
-s.summary          = 'The easiest way to take or select a picture in iOS, because it shouldn't take an hour'
+s.summary          = "The easiest way to take or select a picture in iOS, because it shouldn't take an hour"
 
   s.description      = <<-DESC
 ```swift
